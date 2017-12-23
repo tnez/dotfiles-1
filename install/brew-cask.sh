@@ -5,12 +5,14 @@ fi
 
 brew tap caskroom/cask
 brew tap caskroom/fonts
+brew tap d12frosted/emacs-plus
 
 # Install packages
 
 apps=(
   alfred
   dash2
+  emacs-plus
   firefox
   flux
   font-fira-code
@@ -25,6 +27,9 @@ apps=(
 )
 
 brew cask install "${apps[@]}"
+
+# link any apps that need to be linked
+brew linkapps emacs-plus
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
