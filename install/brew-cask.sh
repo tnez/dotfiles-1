@@ -11,29 +11,17 @@ brew tap caskroom/fonts
 apps=(
   alfred
   dash2
-  dropbox
   firefox
-  firefoxnightly
   flux
   font-fira-code
-  glimmerblocker
   google-chrome
   google-chrome-canary
-  google-drive
   hammerspoon
   kaleidoscope
   macdown
-  opera
-  screenflow
   slack
-  sourcetree
   spotify
-  sublime-text
   transmit
-  virtualbox
-  visual-studio-code
-  vlc
-  webstorm
 )
 
 brew cask install "${apps[@]}"
